@@ -1,0 +1,16 @@
+[
+  {
+    "name": "my-first-task",
+    "image": "${image_url}",
+    "essential": true,
+    "portMappings": [
+      {
+        "containerPort": 3000,
+        "hostPort": 3000
+      }
+    ],
+    "memory": 512,
+    "cpu": 256,
+    "environment": [{ "name": "RDS_HOSTNAME", "value": "${database_host}" }]
+  }
+]
